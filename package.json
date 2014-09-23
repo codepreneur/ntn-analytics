@@ -22,6 +22,7 @@
   "bugs": {
     "url": "https://github.com/codepreneur/ntn-analytics/issues"
   },
+  "homepage": "https://github.com/codepreneur/ntn-analytics",
   "dependencies": {
     "async": "^0.9.0",
     "ejs": "^1.0.0",
@@ -30,5 +31,11 @@
     "mongoose": "^3.8.16",
     "underscore": "^1.7.0"
   },
-  "homepage": "https://github.com/codepreneur/ntn-analytics"
+  "devDependencies": {
+    "charlatan": "^0.1.9",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-compass": "^1.0.1",
+    "grunt-contrib-watch": "^0.6.1"
+  }
 }
