@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -25,6 +26,24 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+
+
+// Connect to MongoDB and start the server
+
+function connectToMongo(callback){
+  mongoose.connect('mongodb://localhost/analytics');
+  mongoose.connection.on('open', function(){
+
+    console.log("Connected to mongodb://localhost/analytics");
+    callback();
+  });
+}
+
+connectToMongo(function(){
+  app.listen(app.get('port'), function(){
+    console.log("Express server listening on port " + app.get('port'));
+  });
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

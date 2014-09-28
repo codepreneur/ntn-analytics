@@ -2,10 +2,11 @@
   "name": "ntn-analytics",
   "version": "0.0.1",
   "description": "End to End Analytics App",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js -w routes"
+    "start": "nodemon server.js -w routes",
+    "mongo": "mongod --config db/mongo.conf"
   },
   "repository": {
     "type": "git",
