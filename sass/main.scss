@@ -1,7 +1,21 @@
+@import "foundation/foundation-global";
+@import "foundation/components/global";
+@import "foundation/components/grid";
+@import "foundation/components/type";
+@import "foundation/components/buttons";
+@import "foundation/components/labels";
+@import "foundation/components/forms";
+@import "foundation/components/section";
+@import "foundation/components/top-bar";
+@import "foundation/components/panels";
+@import "foundation-icons/foundation-icons";
+@import "nv.d3";
+
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: #CCC;
+  background: #FFF;
 }
 
 a {
