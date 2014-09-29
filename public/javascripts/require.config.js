@@ -27,6 +27,15 @@ require.config({
 
 // Initialise require to load the app
 
-require.require({
+require([
+  'app',
 
-});
+  'routes',
+  'controllers',
+  'store',
+
+
+  // views
+  'views/ProductsByRatingChartView'
+
+]);

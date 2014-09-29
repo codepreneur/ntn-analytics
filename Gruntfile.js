@@ -30,6 +30,7 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-compass');
 
+	// Run these tasks on load
 	grunt.task.run('compass:dev');
 
 };
