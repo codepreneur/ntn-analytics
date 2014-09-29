@@ -1,0 +1,19 @@
+<script type="text/x-handlebars" data-template-name="application">
+  <div class="contain-to-grid app-header">
+    <nav class="top-bar">
+      <ul class="title-area">
+        <li class="name">
+          <h1>
+            <a href="/"> <%= title %> </a>
+          </h1>
+        </li>
+      </ul>
+
+      {{ partial 'navigation' }}
+
+    </nav>
+  </div>
+
+  {{ outlet }}
+
+</script>

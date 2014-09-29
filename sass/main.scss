@@ -8,15 +8,10 @@
 @import "foundation/components/section";
 @import "foundation/components/top-bar";
 @import "foundation/components/panels";
-@import "foundation-icons/foundation-icons";
+@import "foundation-fonts/general_foundicons";
 @import "nv.d3";
+@import "chart";
 
-
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: #FFF;
-}
 
 .app-header {
 	margin-bottom: 40px;
